@@ -1,0 +1,5 @@
+Write a program to solve the sliding window minimum problem using any of the methods possible. [This](http://home.tiac.net/~cri/2001/slidingmin.html) could be a helpful link. 
+
+Basically you have an array/vector and a window size. Imagine you are looking through a window at your array and can only see windowSize elements of the array.
+For example, if you had the array {4,3,2,1,5,7} and a windowSize of 3, you could only see {4,3,2} and then it slides along by one and you have: {3,2,1}. it then does this until you reach the end of the array. In this case the views would be: {4,3,2}, {3,2,1}, {2,1,5}, and {1,5,7}
+For each of these 'views' through the window, find the lowest value, and add it to a new array 'r'. (For example, in {4,3,2}, 2 is the lowest). 'r' for the array giving above, would be {2,1,1,1}.
